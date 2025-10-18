@@ -27,10 +27,19 @@ const itens: Item[] = [
   { slug: 'suica', nome: 'Suíça' , descricao: 'Imagem da Suíça' },
 ]
 
-function Lista() {
+type ListaProps = {
+  slug: string // array de slugs (ex: ['alemanha', 'brasil'])
+}
+
+function Lista({ slug }: ListaProps) {
+  const termoBusca = slug.toLowerCase().trim()
+  const itensFiltrados = itens.filter(item =>
+    item.nome.toLowerCase().includes(termoBusca)
+  )
   return (
     <div className="lista-locais">
-      {itens.map((item) => {
+      {itensFiltrados
+      .map((item) => {
         const imagem = new URL(`../../assets/fotos/${item.slug}.jfif`, import.meta.url).href
         return <Local key={item.slug} nome={item.nome} imagem={imagem} descricao={item.descricao}/>
       })}
