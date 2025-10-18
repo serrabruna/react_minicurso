@@ -18,7 +18,8 @@ function ConferenciaPage() {
             />
 
         <div className='lista-container'>
-            <Lista />
+            <Lista
+            slug={searchText} />
         </div>
     </div>
     </>
