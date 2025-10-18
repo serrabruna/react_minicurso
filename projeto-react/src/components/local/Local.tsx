@@ -1,3 +1,5 @@
+import './Local.css'
+
 type LocalProps = {
   nome: string
   imagem: string

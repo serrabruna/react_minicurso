@@ -1,4 +1,5 @@
 import Local from '../local/Local'
+import './Lista.css'
 
 type Item = {
   slug: string
