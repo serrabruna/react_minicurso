@@ -1,11 +1,12 @@
 {
   "dependencies": {
-    "react-router-dom": "^7.9.4"
+    "g": "^2.0.1",
+    "react-router-dom": "^7.9.4",
+    "typescript": "^5.9.3"
   },
   "name": "react_minicurso",
   "version": "1.0.0",
   "main": "index.js",
-  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "vite"

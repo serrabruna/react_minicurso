@@ -1,5 +1,6 @@
 import './Local.css'
 
+//importar em lista, importante colocar descricao para acessibilidade
 type LocalProps = {
   nome: string
   imagem: string
@@ -7,6 +8,9 @@ type LocalProps = {
   descricao: string
 }
 
+//Componente funcional local que recebe props(Propriedades)
+//href é opcional, se não for fornecido, usa # como valor padrão, # significa que o link não leva a lugar nenhum
+//Alterar alt para incluir descricao
 function Local({ nome, imagem, href = '#', descricao }: LocalProps) {
   return (
     <div className="local-card">
@@ -23,3 +27,4 @@ function Local({ nome, imagem, href = '#', descricao }: LocalProps) {
 }
 
 export default Local;
+//Componente reutilizável para exibir informações de um local com imagem, nome e descrição

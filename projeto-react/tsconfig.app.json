@@ -20,7 +20,7 @@
     "strict": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    //"erasableSyntaxOnly": true,
+    //"erasableSyntaxOnly": true, Comentar esta linha para evitar erro no momento de build
     "noFallthroughCasesInSwitch": true,
     "noUncheckedSideEffectImports": true
   },

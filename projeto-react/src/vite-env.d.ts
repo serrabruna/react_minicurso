@@ -3,3 +3,4 @@ declare module '*.svg' {
   export default content;
 }
 
+//Remover este arquivo
