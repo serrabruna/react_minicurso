@@ -16,4 +16,4 @@ createRoot(document.getElementById('root')!).render(
 //É importante envolver a aplicação com BrowserRouter para habilitar o roteamento com React Router
 //StrictMode ajuda a identificar problemas pontencialmente perigosos no código durante o desenvolvimento
 //createRoot é a nova API do React 18 para renderizar a aplicação na raiz do DOM
-//importar globaç css para estilização geral da aplicação
+//importar global css para estilização geral da aplicação

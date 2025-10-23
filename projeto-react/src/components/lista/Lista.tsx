@@ -45,7 +45,7 @@ function Lista({ slug }: ListaProps) {
     <div className="lista-locais">
       {itensFiltrados
       .map((item) => {
-        const imagem = new URL(`../../assets/fotos/${item.slug}.jfif`, import.meta.url).href //carrega a imagem dinamicamente com base no slug
+        const imagem = new URL(`../../assets/fotos/${item.slug}.jpg`, import.meta.url).href //carrega a imagem dinamicamente com base no slug
         return <Local key={item.slug} nome={item.nome} imagem={imagem} descricao={item.descricao}/> //renderiza o componente local para cada item filtrado
       })} 
     </div>
